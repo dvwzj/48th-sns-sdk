@@ -1,0 +1,27 @@
+{
+  "name": "48th-sns-sdk",
+  "version": "1.0.0",
+  "description": "48Group Thailand Social Network System Watcher SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "dvwzj",
+  "license": "MIT",
+  "dependencies": {
+    "@directus/sdk-js": "^6.1.1",
+    "async": "^3.2.0",
+    "axios": "^0.19.2",
+    "change-case": "^4.1.1",
+    "https-proxy-agent": "^5.0.0",
+    "instagram-private-api": "^1.40.1",
+    "lodash": "^4.17.15",
+    "moment-timezone": "^0.5.28",
+    "promise.allsettled": "^1.0.2",
+    "user-agents": "^1.0.559",
+    "uuid": "^8.0.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0"
+  }
+}
