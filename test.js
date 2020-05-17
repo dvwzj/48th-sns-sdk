@@ -165,6 +165,36 @@ async function test () {
   // }).catch((e) => {
   //   console.error(e)
   // })
+
+  await api
+    .facebook
+    .user('bnk48official.tarwaan')
+    .then((user) => {
+      console.log('fb user', user)
+    })
+    .catch((e) => {
+      console.error(e)
+    })
+
+  await api
+    .instagram
+    .user('tarwaan.bnk48office')
+    .then((user) => {
+      console.log('ig user', user)
+    })
+    .catch((e) => {
+      console.error(e)
+    })
+
+  await api
+    .iam48
+    .user('tarwaan')
+    .then((user) => {
+      console.log('iam user', user)
+    })
+    .catch((e) => {
+      console.error(e)
+    })
 }
 
 test()
