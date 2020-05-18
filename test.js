@@ -79,7 +79,7 @@ async function test () {
   //     ]
   //   )
   //   .then((lives) => {
-  //     console.log('fb lives', _.size(lives) /* util.inspect(lives, false, null, true)*/)
+  //     console.log('fb lives', lives /* util.inspect(lives, false, null, true)*/)
   //   })
   //   .catch((e) => {
   //     console.error(e)
