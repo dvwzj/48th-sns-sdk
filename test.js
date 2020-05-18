@@ -10,35 +10,35 @@ const _ = require('lodash')
 const API = require('./index')
 
 async function test () {
-  // const api = new API({
-  //   facebook: {
-  //     access_token: process.env.FACEBOOK_ACCESS_TOKEN,
-  //     graph_version: process.env.FACEBOOK_GRAPH_VERSION
-  //   },
-  //   instagram: {
-  //     user: process.env.INSTAGRAM_USER,
-  //     pass: process.env.INSTAGRAM_PASS
-  //   },
-  //   iam48: {
-  //     email: process.env.IAM48_EMAIL,
-  //     password: process.env.IAM48_PASSWORD
-  //   },
-  //   proxy: {
-  //     host: process.env.PROXY_HOST,
-  //     port: process.env.PROXY_PORT
-  //   }
-  // })
+  const api = new API({
+    facebook: {
+      access_token: process.env.FACEBOOK_ACCESS_TOKEN,
+      graph_version: process.env.FACEBOOK_GRAPH_VERSION
+    },
+    instagram: {
+      user: process.env.INSTAGRAM_USER,
+      pass: process.env.INSTAGRAM_PASS
+    },
+    iam48: {
+      email: process.env.IAM48_EMAIL,
+      password: process.env.IAM48_PASSWORD
+    },
+    proxy: {
+      host: process.env.PROXY_HOST,
+      port: process.env.PROXY_PORT
+    }
+  })
 
-  // await api
-  //   .ready()
-  //   .then((results) => {
-  //     console.log('api ready', results)
-  //   })
-  //   .catch((e) => {
-  //     console.log('api error')
-  //     console.error(e)
-  //     process.exit()
-  //   })
+  await api
+    .ready()
+    .then((results) => {
+      console.log('api ready', results)
+    })
+    .catch((e) => {
+      console.log('api error')
+      console.error(e)
+      process.exit()
+    })
   
   // await api
   //   .facebook
