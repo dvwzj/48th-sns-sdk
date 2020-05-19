@@ -5,7 +5,9 @@ process.env.NODE_TLS_REJECT_UNAUTHORIZED = '0'
 // const fs = require('fs')
 // const util = require('util')
 // const axios = require('axios')
+// const HttpsProxyAgent = require('https-proxy-agent')
 const _ = require('lodash')
+// const moment = require('moment-timezone')
 
 const API = require('./index')
 
@@ -25,7 +27,11 @@ async function test () {
     },
     proxy: {
       host: process.env.PROXY_HOST,
-      port: process.env.PROXY_PORT
+      port: process.env.PROXY_PORT,
+      auth: {
+        user: process.env.PROXY_USER,
+        pass: process.env.PROXY_PASS
+      }
     }
   })
 
@@ -40,6 +46,9 @@ async function test () {
       process.exit()
     })
   
+  // const ip = await api.ip()
+  // console.log({ ip })
+  // process.exit()
   // await api
   //   .facebook
   //   .posts(
@@ -94,7 +103,7 @@ async function test () {
   //     ]
   //   )
   //   .then((posts) => {
-  //     console.log('ig posts', _.size(posts) /* util.inspect(posts, false, null, true)*/)
+  //     console.log('ig posts', posts /* util.inspect(posts, false, null, true)*/)
   //   })
   //   .catch((e) => {
   //     console.error(e)
@@ -119,7 +128,7 @@ async function test () {
   //   .instagram
   //   .lives(
   //     [
-  //       // 'tarwaan.bnk48office',
+  //       'tarwaan.bnk48office',
   //       // 'kaning.cgm48official',
   //     ]
   //   )
