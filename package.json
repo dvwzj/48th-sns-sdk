@@ -1,6 +1,6 @@
 {
   "name": "48th-sns-sdk",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "48Group Thailand Social Network System Watcher SDK",
   "main": "index.js",
   "scripts": {
