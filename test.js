@@ -35,6 +35,7 @@ async function test () {
   //   },
   //   webshare: {
   //     rotate: true,
+  //     shuffle: true,
   //     amount: 100,
   //     index: 1
   //   }
