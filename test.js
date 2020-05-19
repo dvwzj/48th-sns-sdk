@@ -85,35 +85,35 @@ async function test () {
   //     console.error(e)
   //   })
 
-  await api
-    .instagram
-    .posts(
-      [
-        'tarwaan.bnk48office',
-        // 'kaning.cgm48official'
-      ]
-    )
-    .then((posts) => {
-      console.log('ig posts', _.size(posts) /* util.inspect(posts, false, null, true)*/)
-    })
-    .catch((e) => {
-      console.error(e)
-    })
+  // await api
+  //   .instagram
+  //   .posts(
+  //     [
+  //       'tarwaan.bnk48office',
+  //       // 'kaning.cgm48official'
+  //     ]
+  //   )
+  //   .then((posts) => {
+  //     console.log('ig posts', _.size(posts) /* util.inspect(posts, false, null, true)*/)
+  //   })
+  //   .catch((e) => {
+  //     console.error(e)
+  //   })
 
-  await api
-    .instagram
-    .stories(
-      [
-        'tarwaan.bnk48office',
-        // 'kaning.cgm48official',
-      ]
-    )
-    .then((stories) => {
-      console.log('ig stories', stories /* util.inspect(stories, false, null, true)*/)
-    })
-    .catch((e) => {
-      console.error(e)
-    })
+  // await api
+  //   .instagram
+  //   .stories(
+  //     [
+  //       'tarwaan.bnk48office',
+  //       // 'kaning.cgm48official',
+  //     ]
+  //   )
+  //   .then((stories) => {
+  //     console.log('ig stories', stories /* util.inspect(stories, false, null, true)*/)
+  //   })
+  //   .catch((e) => {
+  //     console.error(e)
+  //   })
 
   // await api
   //   .instagram
@@ -180,15 +180,15 @@ async function test () {
   //     console.error(e)
   //   })
 
-  await api
-    .instagram
-    .user('tarwaan.bnk48office')
-    .then((user) => {
-      console.log('ig user', user)
-    })
-    .catch((e) => {
-      console.error(e)
-    })
+  // await api
+  //   .instagram
+  //   .user('tarwaan.bnk48office')
+  //   .then((user) => {
+  //     console.log('ig user', user)
+  //   })
+  //   .catch((e) => {
+  //     console.error(e)
+  //   })
 
   // await api
   //   .iam48
