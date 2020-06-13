@@ -26,14 +26,14 @@ async function test () {
   //     email: process.env.IAM48_EMAIL,
   //     password: process.env.IAM48_PASSWORD
   //   },
-  //   proxy: {
-  //     host: process.env.PROXY_HOST,
-  //     port: process.env.PROXY_PORT,
-  //     auth: {
-  //       user: process.env.PROXY_USER,
-  //       pass: process.env.PROXY_PASS
-  //     }
-  //   },
+  //   // proxy: {
+  //   //   host: process.env.PROXY_HOST,
+  //   //   port: process.env.PROXY_PORT,
+  //   //   auth: {
+  //   //     user: process.env.PROXY_USER,
+  //   //     pass: process.env.PROXY_PASS
+  //   //   }
+  //   // },
   //   // proxy: false,
   //   // webshare: {
   //   //   rotate: true,
@@ -97,6 +97,16 @@ async function test () {
   //   )
   //   .then((lives) => {
   //     console.log('fb lives', lives /* util.inspect(lives, false, null, true)*/)
+  //   })
+  //   .catch((e) => {
+  //     console.error(e)
+  //   })
+
+  // await api
+  //   .instagram
+  //   .user('tarwaan.bnk48office')
+  //   .then((user) => {
+  //     console.log('ig user', user /* util.inspect(posts, false, null, true)*/)
   //   })
   //   .catch((e) => {
   //     console.error(e)
