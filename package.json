@@ -14,7 +14,7 @@
     "axios": "^0.19.2",
     "change-case": "^4.1.1",
     "figps": "^1.0.0",
-    "figss": "^1.0.5",
+    "figss": "^1.0.6",
     "figus": "^1.0.0",
     "https-proxy-agent": "^5.0.0",
     "instagram-private-api": "^1.40.1",
